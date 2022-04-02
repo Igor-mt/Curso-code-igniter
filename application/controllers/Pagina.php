@@ -1,13 +1,16 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allwed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pagina extends CI_Controller {
+class Pagina extends CI_Controller
+{
 
-    function __construct(){
+    function __construct()
+    {
         parent::__construct();
     }
 
-    public function index(){
+    public function index()
+    {
         echo 'tudo ok';
     }
 }
