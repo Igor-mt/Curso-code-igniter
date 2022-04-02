@@ -8,7 +8,7 @@ class Pagina extends CI_Controller {
         }
 
         public function index (){
-            echo Tudo ok
+            echo "Tudo ok"
             
         }
 }
