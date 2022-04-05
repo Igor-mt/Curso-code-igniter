@@ -1,11 +1,16 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pagina extends CI_Controller
-{
+class Pagina extends CI_Controller{
 
-    public function index()
-    {
-        echo 'bem vindo a Pagina';
+    function __construct(){
+        parent::__construct();  
+        $this->load->helper('url');      
+    }
+
+    public function index(){
+        $dados['titulo'] = 'Igor Matheus Desenvolvimento Web';
+        $this->load->view('home', $dados);
+        
     }
 }
