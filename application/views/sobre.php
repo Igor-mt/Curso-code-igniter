@@ -1,3 +1,4 @@
+<?php $this->load->view('header'); ?>
 	<div class="linha">
 		<section>
 			<div class="coluna col8">
@@ -13,7 +14,7 @@
 			</div>
 			<div class="coluna col4 sidebar">
 				<h3>Formação profissional</h3>
-				<img src="img/formatura.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/img/formatura.jpg')?>" alt="" />
 				<ul>
 					<li>Graduado em análise e desenvolvimento de sistemas para web pela universidade ABC</li>
 					<li>Especialização em marketing de conteúdo</li>
@@ -41,7 +42,8 @@
 				</section>
 			</div>
 			<div class="coluna col5">
-				<?php require_once('noticias.php'); ?>
+				<?php $this->load->view('noticias'); ?>
 			</div>
 		</div>
 	</div>
+<?php $this->load->view('header'); ?>

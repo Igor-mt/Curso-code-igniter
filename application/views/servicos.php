@@ -1,8 +1,9 @@
+<?php $this->load->view('header'); ?>
 	<div class="linha">
 		<section>
 			<div class="coluna col4 sidebar">
 				<h3>O que eu faço?</h3>
-				<img src="img/ideia.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/ideia.jpg')?>" alt="" />
 				<ul>
 					<li>Identidade visual</li>
 					<li>Layout para sites</li>
@@ -42,7 +43,8 @@
 				</section>
 			</div>
 			<div class="coluna col5">
-				<?php require_once('noticias.php'); ?>
+				<?php $this->load->view('noticias'); ?>
 			</div>
 		</div>
 	</div>
+<?php $this->load->view('footer'); ?>

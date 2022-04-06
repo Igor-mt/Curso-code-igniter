@@ -11,6 +11,27 @@ class Pagina extends CI_Controller{
     public function index(){
         $dados['titulo'] = 'Igor Matheus Desenvolvimento Web';
         $this->load->view('home', $dados);
-        
+    }
+    
+    public function clientes(){
+        $dados['titulo'] = 'Clientes - Igor Matheus Desenvolvimento Web';
+        $this->load->view('clientes', $dados);
+    }
+
+    public function servicos(){
+        $dados['titulo'] = 'Serviços - Igor Matheus Desenvolvimento Web';
+        $this->load->view('servicos', $dados);
+    }
+
+    public function sobre(){
+        $dados['titulo'] = 'Sobre - Igor Matheus Desenvolvimento Web';
+        $this->load->view('sobre', $dados);
+    }
+
+    public function contato(){
+        $dados['titulo'] = 'CONTATO - Igor Matheus Desenvolvimento Web';
+        $this->load->view('contato', $dados);
     }
 }
+
+

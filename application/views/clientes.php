@@ -1,44 +1,45 @@
+<?php $this->load->view('header'); ?>
 	<div class="linha">
 		<section>
 			<h2>Veja quem já contratou nossos serviços</h2>
 			<div class="coluna col6">
 				<h4>Nome da Empresa 1</h4>
-				<img src="img/thumb-grande.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/thumb-grande.jpg')?>" alt="" />
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae earum neque magni ab. Vitae quidem laborum libero dolorem aspernatur officia ipsa, sit dolorum blanditiis alias facere voluptates debitis iusto?</p>
 			</div>
 			<div class="coluna col6">
 				<h4>Nome da Empresa 2</h4>
-				<img src="img/thumb-grande.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/thumb-grande.jpg')?>" alt="" />
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae earum neque magni ab. Vitae quidem laborum libero dolorem aspernatur officia ipsa, sit dolorum blanditiis alias facere voluptates debitis iusto?</p>
 			</div>
 			<div class="coluna col4">
 				<h4>Nome da Empresa 3</h4>
-				<img src="img/thumb-grande.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/thumb-grande.jpg')?>" alt="" />
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae earum neque magni ab. Vitae quidem laborum libero dolorem aspernatur officia ipsa, sit dolorum blanditiis alias facere voluptates debitis iusto?</p>
 			</div>
 			<div class="coluna col4">
 				<h4>Nome da Empresa 4</h4>
-				<img src="img/thumb-grande.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/thumb-grande.jpg')?>" alt="" />
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae earum neque magni ab. Vitae quidem laborum libero dolorem aspernatur officia ipsa, sit dolorum blanditiis alias facere voluptates debitis iusto?</p>
 			</div>
 			<div class="coluna col4">
 				<h4>Nome da Empresa 5</h4>
-				<img src="img/thumb-grande.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/thumb-grande.jpg')?>" alt="" />
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae earum neque magni ab. Vitae quidem laborum libero dolorem aspernatur officia ipsa, sit dolorum blanditiis alias facere voluptates debitis iusto?</p>
 			</div>
 			<div class="coluna col4">
 				<h4>Nome da Empresa 6</h4>
-				<img src="img/thumb-grande.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/thumb-grande.jpg')?>" alt="" />
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae earum neque magni ab. Vitae quidem laborum libero dolorem aspernatur officia ipsa, sit dolorum blanditiis alias facere voluptates debitis iusto?</p>
 			</div>
 			<div class="coluna col4">
 				<h4>Nome da Empresa 7</h4>
-				<img src="img/thumb-grande.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/thumb-grande.jpg')?>" alt="" />
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae earum neque magni ab. Vitae quidem laborum libero dolorem aspernatur officia ipsa, sit dolorum blanditiis alias facere voluptates debitis iusto?</p>
 			</div>
 			<div class="coluna col4">
 				<h4>Nome da Empresa 8</h4>
-				<img src="img/thumb-grande.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/thumb-grande.jpg')?>" alt="" />
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae earum neque magni ab. Vitae quidem laborum libero dolorem aspernatur officia ipsa, sit dolorum blanditiis alias facere voluptates debitis iusto?</p>
 			</div>
 		</section>
@@ -55,7 +56,8 @@
 				</section>
 			</div>
 			<div class="coluna col5">
-				<?php require_once('noticias.php'); ?>
+				<?php $this->load->view('noticias'); ?>
 			</div>
 		</div>
 	</div>
+<?php $this->load->view('footer'); ?>

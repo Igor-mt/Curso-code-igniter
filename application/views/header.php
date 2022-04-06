@@ -19,7 +19,7 @@
 						<ul class="menu inline sem-marcador">
 							<li><a href="<?php echo base_url(); ?>">home</a></li>
 							<li><a href="<?php echo base_url('clientes'); ?>">clientes</a></li>
-							<li><a href="?<?php echo base_url('servico'); ?>">serviços</a></li>
+							<li><a href="?<?php echo base_url('servicos'); ?>">serviços</a></li>
 							<li><a href="<?php echo base_url('sobre'); ?>">sobre</a></li>
 							<li><a href="<?php echo base_url('contato'); ?>">contato</a></li>
 						</ul>

@@ -1,4 +1,4 @@
-	<?php $this->load->view('header'); ?>
+<?php $this->load->view('header'); ?>
 	<div class="linha">
 		<section>
 			<div class="coluna col3 sidebar">
@@ -37,4 +37,4 @@
 			</div>
 		</div>
 	</div>
-	<?php $this->load->view('footer'); ?>
+<?php $this->load->view('footer'); ?>

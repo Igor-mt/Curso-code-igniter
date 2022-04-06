@@ -1,8 +1,9 @@
+<?php $this->load->view('header'); ?>
 	<div class="linha">
 		<section>
 			<div class="coluna col5 sidebar">
 				<h3>Localização</h3>
-				<img src="img/mapa.jpg" alt="" />
+				<img src="<?php echo base_url('assets/img/mapa.jpg')?>" alt="" />
 				<ul class="sem-padding sem-marcador">
 					<li>Rua Machado de Assis, 121</li>
 					<li>Bairo Moinhos</li>
@@ -45,7 +46,8 @@
 				</section>
 			</div>
 			<div class="coluna col5">
-				<?php require_once('noticias.php'); ?>
+				<?php $this->load->view('noticias'); ?>	
 			</div>
 		</div>
 	</div>
+<?php $this->load->view('footer'); ?>
