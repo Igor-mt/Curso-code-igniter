@@ -18,17 +18,24 @@
 			</div>
 			<div class="coluna col7 contato">
 				<h2>Envie uma mensagem</h2>
-				<form action="">
-					<label for="nome">Seu nome:</label>
-					<input type="text" name="nome" id="nome" />
-					<label for="email">Seu email:</label>
-					<input type="text" name="email" id="email" />
-					<label for="assunto">Assunto:</label>
-					<input type="text" name="assunto" id="assunto" />
-					<label for="mensagem">Mensagem:</label>
-					<textarea name="mensagem" id="mensagem"></textarea>
-					<input type="submit" class="botao" name="enviar" value="Enviar mensagem &raquo;" />
-				</form>
+			<?php
+				if($formerror):
+					echo '<p>'.$formerror.'</p>';
+				endif;
+
+				echo form_open('pagina/contato');
+				echo form_label('Seu Nome', 'nome');
+				echo form_input('nome', set_value('nome'));
+				echo form_label('Seu Email', 'email');
+				echo form_input('email', set_value('email'));
+				echo form_label('Assunto', 'assunto');
+				echo form_input('assunto', set_value('assunto'));
+				echo form_label('Mensagem', 'mensagem');
+				echo form_input('mensagem', set_value('mensagem'));
+				echo form_textarea('mensagem');
+				echo form_submit('Enviar', 'Enviar mensagem >>', array('class' => 'botao'));
+				echo form_close();				 
+			?>
 			</div>
 		</section>
 	</div>
