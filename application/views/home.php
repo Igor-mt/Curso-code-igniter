@@ -11,6 +11,7 @@
 					<li><a href="">Nome da Empresa 5</a></li>
 					<li><a href="">Nome da Empresa 6</a></li>
 					<li><a href="">Nome da Empresa 7</a></li>
+					<li><a href="">Nome da Empresa 8</a></li>
 				</ul>
 				<a href="<?php echo base_url('clientes'); ?>" class="botao">Ver todos &raquo;</a>
 			</div>
