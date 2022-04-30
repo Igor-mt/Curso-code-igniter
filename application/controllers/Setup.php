@@ -31,7 +31,9 @@ class Setup extends CI_Controller
         }
 
         // carrega view
-
+        $dados ['titulo'] = 'Igor Matheus - Setup do sistema';
+        $dados ['h2'] = 'Setup do sistema';
+        $this->load->view('painel/setup', $dados);
     }
 
     public function alterar()
