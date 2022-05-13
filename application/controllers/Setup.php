@@ -74,20 +74,20 @@ class Setup extends CI_Controller
             endif;
         else :
             $dados_form = $this->input->post();
-           if($this->option->get_option('user_login')== $dados_form['login']):
+            if ($this->option->get_option('user_login') == $dados_form['login']) :
                 //usuário existe
-                if(password_verify($dados_form['senha'], $this->option->get_option('user_pass'))):
+                if (password_verify($dados_form['senha'], $this->option->get_option('user_pass'))) :
                     //senha ok, fazer login
                     $this->session->set_userdata('logged', TRUE);
                     $this->session->set_userdata('user_login', $dados_form['login']);
                     $this->session->set_userdata('user_email', $this->option->get_option('user_email'));
                     //fazer redirect para home do painel
                     var_dump($_SESSION);
-                else:
+                else :
                     //senha incorreta
-                    set_msg('<p>A senha incerida está incorreta!</p>');                
+                    set_msg('<p>A senha incerida está incorreta!</p>');
                 endif;
-            else:
+            else :
                 //usuário não existe
                 set_msg('<p>Usuário não existe!</p>');
             endif;
