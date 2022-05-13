@@ -14,7 +14,7 @@ a:hover{
 	width: 960px;
 	margin: 0 auto;
 	overflow: auto;
-	padding: 5px 0;
+	padding: 10px 0;
 }
 .coluna{
 	padding: 0 10px;
@@ -108,7 +108,7 @@ h1.logo{
 	letter-spacing: -2px;
 }
 .conteudo-extra{
-	background: #f1f2ea;
+	: #f1f2ea;
 }
 .footer{
 	background: #1f3c58;
