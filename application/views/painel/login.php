@@ -13,7 +13,7 @@
 <body>
     <div class="linha">
         <div class="coluna col4">&nbsp;</div>
-        <div class="coluna col4"></div>
+        <div class="coluna col4">
         <h2><?php echo $h2; ?></h2>
         <?php
         if($msg = get_msg()):
@@ -27,7 +27,7 @@
         echo form_submit('enviar', 'Autenticar', array('class' => 'botao'));
         echo form_close();
         ?>
-
+    </div>
         <div class="coluna col4">&nbsp;</div>
     </div>
 </body>
