@@ -1,7 +1,7 @@
 label {
     display: block;
     font-size: 13px;
-    font-weight: 1;
+    font-weight: 300;
 }
 
 input, textarea {
@@ -32,4 +32,7 @@ input.botao {
 .msg-box p{
     margin: 0;
     padding: 2px 0;
+}
+.login {
+    margin-top: 150px;
 }

@@ -9,14 +9,14 @@ class Option_model extends CI_Model
         parent::__construct();
     }
 
-    public function get_option($option_name){
+    public function get_option($option_name, $default_value=NULL){
         $this->db->where('option_name', $option_name);
         $query = $this->db->get('options', 1);
         if ($query->num_rows() == 1):
             $row = $query->row();
             return $row->option_value;
         else:
-            return null;
+            return $default_value;
         endif;
     }
     public function update_option($option_name, $option_value){
@@ -26,7 +26,7 @@ class Option_model extends CI_Model
             //Opção já existe, devo atualizar
             $this->db->set('option_value', $option_value);
             $this->db->set('option_name', $option_name);
-            $this->db->uptade('option');
+            $this->db->update('options');
             return $this->db->affected_rows();
         else:
             //opção não existe, devo inserir

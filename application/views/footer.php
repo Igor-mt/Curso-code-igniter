@@ -2,7 +2,7 @@
 		<div class="linha">
 			<footer>
 				<div class="coluna col12">
-					<span>&copy; 2022 - Igor Matheus Developer Web</span>
+					<span>&copy; <?php echo date('Y')?> - Igor Matheus Developer Web</span>
 				</div>
 			</footer>
 		</div>

@@ -12,7 +12,11 @@
 		<div class="linha">
 			<header>
 				<div class="coluna col4">
-					<h1 class="logo">Igor Matheus</h1>
+					<h1 class="logo">
+						<?php
+						echo $this->option->get_option('nome_site', 'Falta configurar');
+						?>
+					</h1>
 				</div>
 				<div class="coluna col8">
 					<nav>
