@@ -14,7 +14,7 @@
 				<div class="coluna col4">
 					<h1 class="logo">
 						<?php
-						echo $this->option->get_option('nome_site', 'Falta configurar');
+						echo $this->option->get_option('nome_site', 'Você não cadastrou a option "nome_site".');
 						?>
 					</h1>
 				</div>

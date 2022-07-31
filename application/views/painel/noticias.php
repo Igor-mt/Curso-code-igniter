@@ -28,7 +28,11 @@
                             ?>
                                 <tr>
                                     <td class="titulo-noticia"><?php echo $linha->titulo; ?></td>
-                                    <td Align="rigth" class="acoes"><?php echo anchor('noticia/editar/' . $linha->id, 'Editar'); ?> | <?php echo anchor('noticia/excluir/' . $linha->id, 'Excluir'); ?> | <?php echo anchor('post/' . $linha->id, 'Ver', array('target' => '_blanck')); ?></td>
+                                    <td Align="rigth" class="acoes">
+                                        <?php echo anchor('noticia/editar/' . $linha->id, 'Editar'); ?>
+                                        | <?php echo anchor('noticia/excluir/' . $linha->id, 'Excluir'); ?>
+                                        | <?php echo anchor('post/' . $linha->id, 'Ver', array('target' => '_blanck')); ?>
+                                    </td>
                                 </tr>
                             <?php
                             endforeach;
