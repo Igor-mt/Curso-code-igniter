@@ -6,19 +6,50 @@
             <li><a href="<?php echo base_url('noticia/listar'); ?>">LISTAR</a></li>
         </ul>
     </div>
-    <div class="coluna col10">
+    <div class="coluna col3">
 
         <h2><?php echo $h2; ?></h2>
         <?php
         if ($msg = get_msg()) :
-            echo '<div class="msg-box">'.$msg.'</div>';
+            echo '<div class="msg-box">' . $msg . '</div>';
         endif;
         switch ($tela):
             case 'listar':
-                echo 'tela de listagem';
+                if (isset($noticias) && sizeof($noticias) > 0) :
+        ?>
+                    <table>
+                        <thead>
+                            <th Align="left">Título</th>
+                            <th Align="rigth">Ações</th>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($noticias as $linha) :
+                            ?>
+                                <tr>
+                                    <td class="titulo-noticia"><?php echo $linha->titulo; ?></td>
+                                    <td Align="rigth" class="acoes"><?php echo anchor('noticia/editar/' . $linha->id, 'Editar'); ?> | <?php echo anchor('noticia/excluir/' . $linha->id, 'Excluir'); ?> | <?php echo anchor('post/' . $linha->id, 'Ver', array('target' => '_blanck')); ?></td>
+                                </tr>
+                            <?php
+                            endforeach;
+                            ?>
+                        </tbody>
+                    </table>
+        <?php
+                else :
+                    echo '<div class="msg-box"> <p>Nenhuma notícia cadastrada!</p> </div>';
+                endif;
                 break;
             case 'cadastrar':
-                echo 'tela de cadastro';
+                echo form_open_multipart();
+                echo form_label('Título', 'titulo');
+                echo form_input('titulo', set_value('titulo'));
+                echo form_label('Conteúdo', 'conteudo');
+                echo form_textarea('conteudo', set_value('conteudo'));
+                echo form_label('Imagem da notícia (thumbnail):', 'imagem');
+                echo form_upload('imagem');
+                echo form_submit('enviar', 'Salvar notícia', array('class' => 'botao'));
+                echo form_close();
                 break;
             case 'editar':
                 echo 'tela de alteração';

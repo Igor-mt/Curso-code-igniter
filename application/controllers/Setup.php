@@ -85,7 +85,7 @@ class Setup extends CI_Controller
                     redirect('setup/alterar', 'refresh');
                 else :
                     //senha incorreta
-                    set_msg('<p>A senha incerida está incorreta!</p>');
+                    set_msg('<p>A senha inserida está incorreta!</p>');
                 endif;
             else :
                 //usuário não existe

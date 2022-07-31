@@ -31,3 +31,13 @@ if(!function_exists('verifica_login')):
         endif;
     }
 endif;
+
+if(!function_exists('config_upload')):
+    // define as configuações para upload de imagem/arquivos
+    function config_upload($path='./uploads', $types='jpg|png', $size=512){
+        $config['upload_path'] = $path;
+        $config['allowed_types'] = $types;
+        $config['max_size'] = $size;
+        return $config;
+ }
+endif;
